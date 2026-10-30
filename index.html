@@ -130,6 +130,89 @@ body.cover .brand{opacity:0}
 .card.offer p{grid-column:2;grid-row:3}
 .slide.thanks .in{z-index:1}
 @media (prefers-reduced-motion:reduce){.bgv{display:none}.bg{transform:none!important;transition:none}}
+
+/* --- Commercial slides 12–15 (added 2026-10-30) --- */
+.slide.comm .kicker:before{background:var(--royal)}
+.scope{list-style:none;columns:2;column-gap:28px;margin-top:22px;font-size:clamp(12.5px,.92vw,14.5px);line-height:1.45;max-width:720px}
+.scope li{break-inside:avoid;padding:8px 0 8px 18px;position:relative;border-bottom:1px solid rgba(244,241,234,.14)}
+.scope li:before{content:"";position:absolute;left:0;top:15px;width:8px;height:1px;background:var(--royal)}
+.scope.one{columns:1;max-width:460px}
+.price{margin-top:clamp(18px,3vh,30px);display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.price b{font:300 clamp(34px,3.4vw,54px)/1 var(--serif)}
+.price b i{font-style:normal;font-size:.42em;letter-spacing:.08em;margin-right:8px;opacity:.8}
+.price span{font-size:12px;letter-spacing:.06em;opacity:.75;max-width:26ch;line-height:1.4}
+.clause{font-size:clamp(10.5px,.78vw,12px);line-height:1.55;opacity:.68;max-width:56ch;margin-top:14px;font-style:italic}
+.two{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,4vw,64px);align-items:start}
+.panelcard{background:rgba(6,6,30,.55);border:1px solid rgba(244,241,234,.2);padding:clamp(16px,1.8vw,26px);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.panelcard h3{font:400 clamp(18px,1.5vw,24px)/1.15 var(--serif);margin-bottom:4px}
+.panelcard .n{font:500 11px var(--sans);letter-spacing:.22em;color:#9cc4ef;text-transform:uppercase;margin-bottom:8px}
+.panelcard .scope{columns:1;margin-top:8px;max-width:none}
+.panelcard p.small{margin-top:12px}
+/* 12 branding: logo inside the pattern */
+.slide.brandref .bigmark{position:absolute;right:9%;top:50%;transform:translateY(-50%);width:clamp(160px,21vw,340px);filter:drop-shadow(0 24px 70px rgba(0,0,0,.55))}
+.slide.brandref .bigmark{display:none}
+.slide.brandref .in{width:min(58%,820px)}
+/* 13 website: before / proposed */
+.shots{position:relative;padding:34px 0 0 0}
+.frame{border-radius:10px;overflow:hidden;background:#0c1030;box-shadow:0 30px 80px rgba(0,0,0,.55);border:1px solid rgba(244,241,234,.16)}
+.frame .bar{height:18px;background:#141a3d;display:flex;align-items:center;gap:5px;padding:0 9px}
+.frame .bar i{width:6px;height:6px;border-radius:50%;background:rgba(244,241,234,.35)}
+.frame img{display:block;width:100%}
+.frame.before{position:absolute;left:-4%;top:0;width:40%;z-index:2;filter:saturate(.9);opacity:.95}
+.frame.after{margin-left:14%}
+.tagpill{position:absolute;z-index:3;font:600 10px var(--sans);letter-spacing:.2em;text-transform:uppercase;padding:6px 10px;border-radius:40px;background:var(--navy);border:1px solid rgba(244,241,234,.4)}
+.tagpill.b{left:-4%;top:-12px}
+.tagpill.a{right:0;top:22px;background:var(--royal);border-color:var(--royal)}
+.mock{container-type:inline-size;aspect-ratio:16/10.4;background:var(--paper);color:var(--navy);font-family:var(--sans);position:relative;overflow:hidden}
+.mock .nav{display:flex;align-items:center;gap:1.6cqw;padding:1.6cqw 3cqw;font-size:1.25cqw;font-weight:500;letter-spacing:.02em}
+.mock .nav img{height:2.8cqw}
+.mock .nav b{font:400 1.7cqw var(--serif);margin-right:auto}
+.mock .nav span{opacity:.75}
+.mock .nav .cta{background:var(--navy);color:var(--paper);padding:.7cqw 1.5cqw;border-radius:3cqw;opacity:1}
+.mock .hero{position:relative;height:38cqw;background:url(assets/kv04.jpg) center/cover;color:var(--paper)}
+.mock .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,6,30,.78),rgba(6,6,30,.1) 70%)}
+.mock .hero div{position:relative;padding:5cqw 3.4cqw;max-width:52%}
+.mock .hero small{display:block;font-size:1.05cqw;letter-spacing:.28em;text-transform:uppercase;opacity:.8;margin-bottom:1.2cqw}
+.mock .hero h5{font:300 5.2cqw/1 var(--serif);letter-spacing:-.01em}
+.mock .hero h5 em{font-style:italic;color:#9cc4ef}
+.mock .hero p{font:300 1.55cqw/1.4 var(--serif);margin:1.6cqw 0 2cqw;opacity:.95}
+.mock .hero .btn{display:inline-block;font-size:1.15cqw;font-weight:600;letter-spacing:.12em;text-transform:uppercase;background:var(--royal);padding:1.1cqw 2cqw;border-radius:3cqw;margin-right:1cqw}
+.mock .hero .btn.o{background:transparent;border:1px solid rgba(244,241,234,.6)}
+.mock .strip{display:flex;gap:2.4cqw;padding:1.3cqw 3.4cqw;font-size:1.1cqw;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid rgba(6,6,58,.12)}
+.mock .strip b{font-weight:600;color:var(--royal)}
+.mock .prods{display:grid;grid-template-columns:repeat(3,1fr);gap:2cqw;padding:2.4cqw 3.4cqw}
+.mock .prods div{font-size:1.15cqw;line-height:1.4}
+.mock .prods img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;margin-bottom:1cqw;border-radius:.6cqw}
+.mock .prods b{display:block;font:400 1.7cqw var(--serif)}
+.mock .prods span{opacity:.7}
+.mock .prods i{font-style:normal;float:right;font-weight:600}
+.mock .foot{position:absolute;left:0;right:0;bottom:0;padding:1.2cqw 3.4cqw;font-size:1.05cqw;letter-spacing:.2em;text-transform:uppercase;background:var(--navy);color:var(--paper);display:flex;justify-content:space-between}
+
+.slide.web .in{padding-top:clamp(70px,9vh,96px);padding-bottom:clamp(40px,6vh,70px)}
+.slide.web .two{grid-template-columns:.9fr 1.1fr;gap:clamp(20px,3vw,48px);align-items:center}
+.slide.web h2{font-size:clamp(30px,3.6vw,54px)}
+.slide.web .lead{font-size:clamp(15px,1.25vw,19px);margin-top:14px}
+.slide.web .scope{font-size:clamp(11.5px,.8vw,12.5px);margin-top:14px;column-gap:20px}
+.slide.web .scope li{padding:5px 0 5px 16px}
+.slide.web .scope li:before{top:11px}
+.slide.web p.small{font-size:clamp(10.5px,.74vw,11.5px);margin-top:10px;max-width:none}
+.slide.web .clause{margin-top:8px;max-width:none}
+.slide.web .price{margin-top:14px}
+.slide.web .price b{font-size:clamp(28px,2.6vw,40px)}
+.shots{display:grid;grid-template-columns:28% 1fr;gap:16px;align-items:end;padding:0}
+.shots>div{position:relative}
+.frame.before{position:static;width:auto;filter:saturate(.9)}
+.frame.after{margin:0}
+.tagpill{position:static;display:inline-block;margin-bottom:10px}
+.shots .cap{font-size:10.5px;letter-spacing:.06em;opacity:.65;margin-top:8px;line-height:1.4}
+/* 15 investment table */
+.inv{margin-top:clamp(22px,3.5vh,40px);max-width:760px}
+.inv .row{display:grid;grid-template-columns:1fr auto auto;gap:clamp(14px,2vw,40px);align-items:baseline;padding:14px 0;border-top:1px solid rgba(244,241,234,.22);font-size:clamp(13px,1vw,15.5px)}
+.inv .row span{opacity:.7;font-size:12px;letter-spacing:.06em;text-align:right;min-width:9ch}
+.inv .row b{font:300 clamp(20px,1.7vw,27px)/1 var(--serif);min-width:7ch;text-align:right}
+.inv .row.total{border-top:1px solid rgba(244,241,234,.6);border-bottom:1px solid rgba(244,241,234,.6);padding:20px 0;margin-top:6px}
+.inv .row.total b{font-size:clamp(32px,3.2vw,50px);color:#9cc4ef}
+.inv .row.total em{font-style:normal;font-family:var(--serif);font-size:clamp(18px,1.6vw,24px)}
 @media (max-width:860px){
   html,body{overflow:visible;height:auto}
   .in{height:auto;min-height:100svh}
@@ -155,6 +238,15 @@ body.cover .brand{opacity:0}
 @media (max-width:520px){.g4,.g3,.g2,.tl{grid-template-columns:1fr}}
 @media (max-width:860px){.bgv{display:none}.card.offer{grid-template-columns:96px 1fr}}
 @media (max-width:600px){.byline{top:72px;right:16px}}
+@media (max-width:860px){
+  .two{grid-template-columns:1fr}
+  .slide.brandref .in{width:100%}
+  .slide.brandref .bigmark{display:block;position:static;transform:none;width:120px;margin:0 0 22px}
+  .slide.brandref .bg{background-image:url(assets/pattern.jpg)!important}
+  .shots{grid-template-columns:1fr;margin-top:24px}
+}
+@media (max-width:600px){.scope{columns:1}.inv .row{grid-template-columns:1fr auto}.inv .row span{display:none}}
+
 </style>
 </head>
 <body class="cover">
@@ -330,7 +422,143 @@ body.cover .brand{opacity:0}
   </div>
 </section>
 
-<!-- 12 THANK YOU -->
+
+<!-- 12 BRANDING REFRESH -->
+<section class="slide comm brandref" data-title="Visual identity refresh">
+  <div class="bg" style="background-image:url(assets/brand-end.jpg)"><video class="bgv" data-src="assets/brand.mp4" data-once="1" muted playsinline preload="none" poster="assets/brand-start.jpg" aria-hidden="true"></video></div>
+  <div class="shade l" style="background:linear-gradient(90deg,rgba(6,6,30,.55) 0%,rgba(6,6,30,.3) 45%,rgba(6,6,30,0) 65%)"></div>
+  <img class="bigmark" src="assets/mark-white.svg" alt="Fresh Samak mark">
+  <div class="in">
+    <div class="kicker">Commercial · 01 · Brand</div>
+    <h2>Visual identity <em>refresh.</em></h2>
+    <p class="lead">The mark stays. Everything around it gets sharper, so the brand looks the way the fish tastes.</p>
+    <ul class="scope">
+      <li>Logo refinement | English</li>
+      <li>Updated colour palette</li>
+      <li>Tone of voice alignment</li>
+      <li>Typography system (secondary, tertiary)</li>
+      <li>Iconography system</li>
+      <li>Patterns &amp; graphic elements</li>
+      <li>Menu redesign</li>
+      <li>Packaging design (paper bags and branding paper)</li>
+      <li>Brand manual | cheat sheet</li>
+    </ul>
+    <div class="price"><b><i>AED</i>7,000</b><span>one-time · design deliverables</span></div>
+  </div>
+</section>
+
+<!-- 13 WEBSITE UI/UX -->
+<section class="slide comm web" data-title="Website UI/UX">
+  <div class="bg" style="background-image:url(assets/kv13.jpg)"></div>
+  <div class="shade full" style="background:rgba(6,6,30,.8)"></div>
+  <div class="in">
+    <div class="two">
+      <div>
+        <div class="kicker">Commercial · 02 · Website</div>
+        <h2>Website <em>UI/UX.</em></h2>
+        <p class="lead" style="max-width:38ch">A design layer over the existing shop. Same platform, same checkout. A Fresh Samak look and a clearer journey.</p>
+        <ul class="scope">
+          <li>Review of the existing layout and customer journey</li>
+          <li>UI/UX improvements for desktop and mobile</li>
+          <li>Homepage redesign aligned with the refreshed identity</li>
+          <li>Visual enhancement of product listing and product detail templates</li>
+          <li>Typography, colour palette, graphic elements and button styling</li>
+          <li>Improved visual hierarchy, navigation and calls to action</li>
+          <li>Campaign imagery and brand storytelling integrated into the designs</li>
+          <li>Final design files and specifications for the client's developers</li>
+          <li>Two rounds of design revisions</li>
+        </ul>
+        <p class="small" style="margin-top:14px"><b>Excludes:</b> website development, coding, CMS modifications, e-commerce functionality, shopping cart, checkout, payment gateways, inventory management, delivery integrations, third-party applications, hosting, maintenance and technical implementation. All existing e-commerce functionality remains the responsibility of the client's appointed website developer.</p>
+        <p class="clause">Inhaus will provide design files only. Implementation, technical feasibility, responsive development and compatibility with the existing e-commerce platform must be reviewed and handled by the client's appointed developer.</p>
+        <div class="price"><b><i>AED</i>6,500</b><span>one-time · design deliverables</span></div>
+      </div>
+      <div class="shots">
+        <div><span class="tagpill b">Today · freshsamak.ae</span>
+          <div class="frame before"><div class="bar"><i></i><i></i><i></i></div><img src="assets/site-before.jpg" alt="Current Fresh Samak website"></div>
+          <div class="cap">Template look, red sale badges, stock-style hero. The fishermen are nowhere.</div>
+        </div>
+        <div><span class="tagpill a">Proposed direction</span>
+        <div class="frame after"><div class="bar"><i></i><i></i><i></i></div>
+          <div class="mock" aria-label="Proposed homepage direction">
+            <div class="nav"><img src="assets/mark.svg" alt=""><b>Fresh Samak</b><span>Today's catch</span><span>Cooked</span><span>The fishermen</span><span>العربية</span><span class="cta">Order</span></div>
+            <div class="hero"><div><small>Mina, Abu Dhabi · landed this morning</small><h5>Know who <em>caught it.</em></h5><p>Fresh local fish from our fishermen to your door, or cooked by us.</p><span class="btn">Shop today's catch</span><span class="btn o">Order cooked</span></div></div>
+            <div class="strip"><b>Today at Mina</b><span>Hamour</span><span>Sheri</span><span>Safi</span><span>Kingfish</span><span>Zubaidi</span></div>
+            <div class="prods">
+              <div><img src="assets/p02.jpg" alt=""><b>Hamour <i>AED 78</i></b><span>Whole · approx. 1.5 kg</span></div>
+              <div><img src="assets/o-fresh.jpg" alt=""><b>Sheri <i>per kg</i></b><span>Whole · cleaned on request</span></div>
+              <div><img src="assets/o-cooked.jpg" alt=""><b>Machboos samak <i>cooked</i></b><span>Emirati recipe · fish caught this morning</span></div>
+            </div>
+            <div class="foot"><span>Fresh Samak · by ADFCS</span><span>Fishermen · Recipes · WhatsApp order</span></div>
+          </div>
+        </div>
+        <div class="cap">Campaign photography as the hero, today's catch up front, one clear order path, Arabic one tap away.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 14 RETAINER -->
+<section class="slide comm" data-title="Social media & content retainer">
+  <div class="bg" style="background-image:url(assets/kv14.jpg)"></div>
+  <div class="shade l" style="background:linear-gradient(90deg,rgba(6,6,30,.9) 0%,rgba(6,6,30,.78) 50%,rgba(6,6,30,.35) 100%)"></div>
+  <div class="in">
+    <div class="kicker">Commercial · 03 · Monthly retainer</div>
+    <h2>Social media &amp; <em>content retainer.</em></h2>
+    <div class="two" style="margin-top:8px">
+      <div>
+        <ul class="scope">
+          <li>1 × social media strategy per year</li>
+          <li>Creative direction, ongoing</li>
+          <li>1 × monthly video shoot</li>
+          <li>1 × bi-monthly photo shoot</li>
+          <li>12 posts per month (6 reels, 6 static, carousels or animated)</li>
+          <li>12 creative stories per month</li>
+          <li>Captions copywriting (English &amp; Arabic), ongoing</li>
+          <li>Scheduling &amp; posting</li>
+          <li>Monthly SM calendar &amp; report</li>
+          <li>Monthly production list / mood-board</li>
+          <li>Graphic design support, up to 4 assets p/m</li>
+          <li>Community management, max 24 hrs response time</li>
+        </ul>
+        <div class="price"><b><i>AED</i>18,930</b><span>per month · content, social and performance marketing</span></div>
+      </div>
+      <div class="panelcard">
+        <div class="n">Included · Performance marketing</div>
+        <h3>Meta / Instagram</h3>
+        <ul class="scope">
+          <li>Monthly paid media strategy &amp; planning</li>
+          <li>Audience strategy: prospecting, remarketing and high-intent segments</li>
+          <li>Budget allocation &amp; ongoing optimisation</li>
+          <li>Campaign setup &amp; execution: awareness, engagement, lead generation, traffic, retargeting and partnership ads</li>
+          <li>Audience optimisation &amp; A/B testing</li>
+          <li>Continuous optimisation &amp; performance monitoring</li>
+          <li>Monthly reporting with learnings and recommendations</li>
+        </ul>
+        <p class="small">Media investment (ad spend) is the advertising budget invested into Meta and is quoted separately.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 15 INVESTMENT -->
+<section class="slide comm" data-title="Investment">
+  <div class="bg" style="background-image:url(assets/kv15.jpg)"><video class="bgv" data-src="assets/kv15.mp4" muted loop playsinline preload="none" poster="assets/kv15.jpg" aria-hidden="true"></video></div>
+  <div class="shade l" style="background:linear-gradient(90deg,rgba(6,6,30,.88) 0%,rgba(6,6,30,.72) 40%,rgba(6,6,30,.25) 75%,rgba(6,6,30,.15) 100%)"></div>
+  <div class="in">
+    <div class="kicker">Investment · three-month launch contract</div>
+    <h2>One launch, <em>one number.</em></h2>
+    <div class="inv">
+      <div class="row"><div>Visual identity refresh</div><span>one-time</span><b>7,000</b></div>
+      <div class="row"><div>Website UI/UX design</div><span>one-time</span><b>6,500</b></div>
+      <div class="row"><div>Social media, content &amp; performance retainer</div><span>3 × 18,930</span><b>56,790</b></div>
+      <div class="row total"><div><em>Three-month contract</em></div><span>AED</span><b>70,290</b></div>
+    </div>
+    <p class="small">All prices are in AED. Meta advertising spend is not included.</p>
+  </div>
+</section>
+
+<!-- 16 THANK YOU -->
 <section class="slide thanks" data-title="Thank you">
   <div class="bg" style="background-image:url(assets/kv12.jpg)"><video class="bgv" data-src="assets/kv12.mp4" muted loop playsinline preload="none" poster="assets/kv12.jpg" aria-hidden="true"></video></div>
   <div class="shade full" style="background:radial-gradient(ellipse at center,rgba(6,6,30,.78) 0%,rgba(6,6,30,.55) 70%)"></div>
